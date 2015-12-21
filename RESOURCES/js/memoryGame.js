@@ -1,3 +1,7 @@
+window.onload = function() {
+	startGame();
+}
+
 function startGame() {
 	loadImagesToStartGame();
 	setTimeout(hideAllImages, 10000);

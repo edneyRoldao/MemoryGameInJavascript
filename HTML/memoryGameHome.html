@@ -7,18 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="../RESOURCES/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../RESOURCES/css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../RESOURCES/css/memoryGame.css"/>
-		<title>Welcome to the Funniest Memory Game</title>
+		<title>Welcome to the Game of Thrones Memory Game</title>
 	</head>
 	<body>
 		<nav class="header navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<p class="navbar-brand" href="#">
-						<img class="logoGOT" src="../RESOURCES/img/gameofthroneslogo.png"> 
-					</p>
-					<span class="welcome">
-						Welcome to Thematic Memory Game !
-					</span>	
 					<div class="home btn btn-default btn-xl">
 						Home
 					</div>
@@ -26,94 +20,162 @@
 			</div>
 		</nav>
 		<div class="gameView">
-			<div id="clean" class="reload btn btn-success btn-xl" onclick="startGame()">
+			<div id="clean" class="reload btn btn-success btn-xl" onclick="window.location.reload()">
 				Start the Game
 			</div>
 			<div class="container">
-				<img name="imgInGame" onclick="imgSelectedByClick(0)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(1)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(2)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(3)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(4)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(5)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(6)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(7)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(8)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(9)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(10)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(11)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(12)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(13)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(14)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(15)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(16)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(17)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(18)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(19)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(20)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(21)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(22)" src="../RESOURCES/img/shadow.png">
-				<img name="imgInGame" onclick="imgSelectedByClick(23)" src="../RESOURCES/img/shadow.png">
+				<div class="row">
+					<div class="columns col-xs-6 col-md-1">
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(0)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png"/>
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(1)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(2)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(3)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+					</div>
+					<div class="columns col-xs-6 col-md-1">
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(4)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(5)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(6)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(7)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+					</div>
+					<div class="columns col-xs-6 col-md-1">
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(8)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(9)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(10)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(11)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+					</div>
+					<div class="columns col-xs-6 col-md-1">
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(12)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(13)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(14)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(15)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+					</div>
+					<div class="columns col-xs-6 col-md-1">
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(16)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(17)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(18)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(19)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+					</div>
+					<div class="columns col-xs-6 col-md-1">
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(20)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(21)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(22)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+						<a href="#" class="thumbnail" onclick="imgSelectedByClick(23)">
+							<img name="imgInGame" src="../RESOURCES/img/shadow.png">
+						</a>
+					</div>
+					<div class="themeLogo">
+						<img src="../RESOURCES/img/gameOfThronesLogo.jpg">
+					</div>
+					<div class="result panel panel-primary">
+						<div class="panel-heading">Game Results</div>
+						<div class="panel-body">
+							<p>
+								In this game there are six different images for each character, furthermore, 
+								these images can be a photo that represents the actor or actress in your
+								real life, then have fun !!!
+							</p>
+						</div>
+						<table class="table">
+							<tr>
+								<th>Player</th>
+								<th>Elapsed Time</th>
+								<th>Best Time</th>
+							</tr>
+							<tr>
+								<td>EDN</td>
+								<td>2:35</td>
+								<td>0:55</td>
+							</tr>
+						</table>
+					</div>
+					<div class="resultTable panel panel-primary">
+						<div class="panel-heading">Four Best Results</div>
+						<table class="table">
+							<tr>
+								<th>Player</th>
+								<th>Best Time</th>
+							</tr>
+							<tr>
+								<td>EDN</td>
+								<td>2:35</td>
+							</tr>
+							<tr>
+								<td>EDN</td>
+								<td>2:35</td>
+							</tr>
+							<tr>
+								<td>EDN</td>
+								<td>2:35</td>
+							</tr>
+							<tr>
+								<td>EDN</td>
+								<td>2:35</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="timerAndResult">
+					<div id="timer" class="btn btn-info btn-xl">
+						Elapsed Time: <span id="minutes">00</span>:<span id="seconds">00</span>
+					</div>
+					<div id="timeResult" class="timeResult btn btn-danger btn-lg">
+						End The Game - Total Time: <span id="total"></span>
+					</div>
+					<br/>
+					<footer class="footer">
+						<p>
+							© 2015 - Developed by Edney Roldão &#160;&#160;
+							<img class="avatarImg" src="../RESOURCES/img/avatarEdney.jpg">
+						</p>
+					</footer>
+				</div>
 			</div>
-			<div id="timer" class="timer btn btn-info btn-xl">
-				Elapsed Time: <span id="minutes">00</span>:<span id="seconds">00</span>
-			</div>
-			<div id="timeResult" class="timeResult btn btn-danger btn-lg">
-				End The Game - Total Time: <span id="total"></span>
-			</div>
-			<footer class="footer">
-				<p>
-					© 2015 - Developed by Edney Roldão &#160;&#160;
-					<img class="avatarImg" src="../RESOURCES/img/avatarEdney.jpg">
-				</p>
-			</footer>
-		</div>
-		<div class="result panel panel-primary">
-			<div class="panel-heading">Game Results</div>
-			<div class="panel-body">
-				<p>
-					There are in this game six different images for each character, furthermore, 
-					these images can be a photo that represents the actor or actress in your
-					real life, then have fun !!!
-				</p>
-			</div>
-			<table class="table">
-				<tr>
-					<th>Player</th>
-					<th>Elapsed Time</th>
-					<th>Best Time</th>
-				</tr>
-				<tr>
-					<td>EDN</td>
-					<td>2:35</td>
-					<td>0:55</td>
-				</tr>
-			</table>
-		</div>
-		<div class="resultTable panel panel-primary">
-			<div class="panel-heading">Four Best Results</div>
-			<table class="table">
-				<tr>
-					<th>Player</th>
-					<th>Best Time</th>
-				</tr>
-				<tr>
-					<td>EDN</td>
-					<td>2:35</td>
-				</tr>
-				<tr>
-					<td>EDN</td>
-					<td>2:35</td>
-				</tr>
-				<tr>
-					<td>EDN</td>
-					<td>2:35</td>
-				</tr>
-				<tr>
-					<td>EDN</td>
-					<td>2:35</td>
-				</tr>
-			</table>
 		</div>
 		<input type="hidden" id="timerResulValue">
 		<script src="../RESOURCES/js/jquery-1.11.3.min.js"></script>
