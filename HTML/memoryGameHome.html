@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8"/>
 		<!-- Some javascript file are at the end of this html file -->
 		<script type="text/javascript" src="../RESOURCES/js/memoryGame.js"></script>
 		<link rel="stylesheet" type="text/css" href="../RESOURCES/css/bootstrap.min.css"/>
@@ -9,34 +10,106 @@
 		<title>Welcome to the Funniest Memory Game</title>
 	</head>
 	<body>
-		<h4>Memory Game (Prototype)  - Release 1.0</h4>
-		<div class="container">
-			<img onclick="imgSelectedByClick(0)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(1)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(2)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(3)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(4)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(5)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(6)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(7)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(8)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(9)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(10)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(11)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(12)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(13)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(14)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(15)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(16)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(17)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(18)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(19)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(20)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(21)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(22)" src="../RESOURCES/img/shadow.png">
-			<img onclick="imgSelectedByClick(23)" src="../RESOURCES/img/shadow.png">
+		<nav class="header navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<p class="navbar-brand" href="#">
+						<img class="logoGOT" src="../RESOURCES/img/gameofthroneslogo.png"> 
+					</p>
+				</div>
+			</div>
+		</nav>
+		<div class="gameView">
+			<div id="clean" class="reload btn btn-success btn-xl" onclick="window.location.reload()">
+				Reload Game
+			</div>
+			<div class="container">
+				<img name="imgInGame" onclick="imgSelectedByClick(0)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(1)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(2)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(3)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(4)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(5)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(6)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(7)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(8)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(9)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(10)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(11)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(12)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(13)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(14)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(15)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(16)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(17)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(18)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(19)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(20)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(21)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(22)" src="../RESOURCES/img/shadow.png">
+				<img name="imgInGame" onclick="imgSelectedByClick(23)" src="../RESOURCES/img/shadow.png">
+			</div>
+			<div id="timer" class="timer btn btn-info btn-xl">
+				Elapsed Time: <span id="minutes">00</span>:<span id="seconds">00</span>
+			</div>
+			<div id="timeResult" class="timeResult btn btn-danger btn-lg">
+				End The Game - Total Time: <span id="total"></span>
+			</div>
 		</div>
-
+		<div class="result panel panel-primary">
+			<div class="panel-heading">Game Results</div>
+			<div class="panel-body">
+				<p>
+					There are in this game six different images for each character, furthermore, 
+					these images can be a photo that represents the actor or actress in your
+					real life, then have fun !!!
+				</p>
+			</div>
+			<table class="table">
+				<tr>
+					<th>Player</th>
+					<th>Elapsed Time</th>
+					<th>Best Time</th>
+				</tr>
+				<tr>
+					<td>EDN</td>
+					<td>2:35</td>
+					<td>0:55</td>
+				</tr>
+			</table>
+		</div>
+		<div class="resultTable panel panel-primary">
+			<div class="panel-heading">Four Best Results</div>
+			<table class="table">
+				<tr>
+					<th>Player</th>
+					<th>Best Time</th>
+				</tr>
+				<tr>
+					<td>EDN</td>
+					<td>2:35</td>
+				</tr>
+				<tr>
+					<td>EDN</td>
+					<td>2:35</td>
+				</tr>
+				<tr>
+					<td>EDN</td>
+					<td>2:35</td>
+				</tr>
+				<tr>
+					<td>EDN</td>
+					<td>2:35</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			<p>
+				© 2015 - Developed by Edney Roldão &#160;&#160;
+				<img class="avatarImg" src="../RESOURCES/img/avatarEdney.jpg">
+			</p>
+		</footer>
+		<input type="hidden" id="timerResulValue">
 		<script src="../RESOURCES/js/jquery-1.11.3.min.js"></script>
 		<script src="../RESOURCES/js/bootstrap.min.js"></script>
 	</body>
