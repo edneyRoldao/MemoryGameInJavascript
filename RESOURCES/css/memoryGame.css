@@ -96,7 +96,7 @@ h4{
 	height: 60px;
 }
 
-.thumbnail{
+#thumbnail{
 	width: 300px;
 }
 
@@ -107,7 +107,7 @@ h4{
 
 .mainPage img{
 	width: 300px;
-	height: 250px;
+	height: 300px;
 
 }
 
