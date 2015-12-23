@@ -96,21 +96,20 @@ h4{
 	height: 60px;
 }
 
-.thumbnail{
-	width: 300px;
-}
-
 .mainPage{
-	margin-right: -170px;
-	margin-left: 35px;
+	margin-right: -30px;
+	width: 350px;
+	margin-left: 30px;
 }
 
 .mainPage img{
-	width: 300px;
-	height: 250px;
-
+	width: 450px;
+	height: 230px;
 }
 
+.panel{
+	width: 300px;
+}
 
 
 
