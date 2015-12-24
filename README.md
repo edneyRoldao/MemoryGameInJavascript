@@ -9,4 +9,8 @@ The first theme will Game of Thrones.
 
 21/12/15 - Finally the core of project is implemented, but to see it you must access the branch EdneyInSAGE.
 
+24/12/15 - Home page is added. The next commits I will add news themes.
+
+Coming soon Supernatural and The Walking Dead Memory Game.
+
 Have Fun !
