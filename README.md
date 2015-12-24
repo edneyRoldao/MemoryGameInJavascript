@@ -2,7 +2,7 @@
 
 Hello everyone !!!
 
-My family likes US tv shows, so I decide to create a simple web project written in Javascript, CSS3, HTML5, JQuery and Bootstrap.
+My family likes US tv shows, games and movies, so I decide to create a simple web project written in Javascript, CSS3, HTML5, JQuery and Bootstrap.
 This project is a fun thematic memory game. It will developed by my Daughter and I.
 
 The first theme will Game of Thrones. 
